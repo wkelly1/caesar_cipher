@@ -6,6 +6,7 @@
     <h1>Caesar Cipher!!!</h1>
 
     <form action ="" class="caesarcipher" method="post">
+        <input type="number" class=shift name = "shift" value = "{{request.form.shift}}">
         <input type="text" class=leftTextArea placeholder="Decrypted text" name = "unEncryptedTxt" value = "{{request.form.unEncryptedTxt}}">
         <input type="submit" class="encryptDecryptButton" name="submit" value="ENCRYPT / DECRYPT">
         <input type="text" class=rightTextArea placeholder="Encrypted text" name = "encryptedTxt" value = "{{request.form.encryptedTxt}}">

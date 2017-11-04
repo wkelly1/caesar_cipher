@@ -41,6 +41,45 @@ def caesarcipher():
     except:
         return render_template('caesarcipher.html')
 
+@app.route("/caesarcipher2/", methods=["POST", "GET"])
+def caesarcipher2():
+    try:
+        if request.method == "POST":
+            print(request.form['options'])
+            if request.form['options']=="encrypt":
+                txt = request.form['txt'].lower()
+                shift = int(request.form['shift'])
+                txtOut = ""
+
+                alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
+                            "t", "u", "v", "w", "x", "y", "z"]
+                for i in txt:
+                    if i != " ":
+                        position = alphabet.index(i)
+                        position = (position + shift) % 26
+                        letter = alphabet[position]
+                        txtOut += (letter)
+
+                output = txtOut
+            elif request.form['options'] == "decrypt":
+
+                txt = request.form['txt'].lower()
+                shift = int(request.form['shift'])
+                txtOut = ""
+                alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
+                            "t", "u", "v", "w", "x", "y", "z"]
+                for i in txt:
+                    if i != " ":
+                        position = alphabet.index(i)
+                        position = (position - shift) % 26
+                        letter = alphabet[position]
+                        txtOut += (letter)
+
+                output = txtOut
+
+        return render_template('caesarcipher2.html', output=output)
+    except:
+        return render_template('caesarcipher2.html')
 
 if __name__ == "__main__":
     app.run()

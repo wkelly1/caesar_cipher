@@ -46,41 +46,31 @@ header {
     margin-bottom: 0px;
 }
 
-form h2,h3 {
-  text-align: center;
-  padding: 5px;
-
-}
-
-form h3{
-    margin: 0 0 2.5em 0;
-}
-
 form {
     color: #405365;
     margin: 5% 5% 5% 5%;
 }
 
-.leftTextArea{
+.leftTextArea {
     float: left;
     width: 40%;
-
+    margin-top: 2%;
     color: #405365;
     font-size: 16px;
 }
 
-.rightTextArea{
+.rightTextArea {
     float: right;
-    width: 40%;
-
+    width: 39%;
+    margin: 2% 0;
     color: #405365;
     font-size: 16px;
 }
 
-.encryptDecryptButton{
+.encryptDecryptButton {
     color: #fff;
     background-color: #BB4536;
-    width: 15%;
+    width: auto;
     font-size: 1vw;
     font-weight: bold;
     border: 1px solid;
@@ -91,12 +81,55 @@ form {
 
 }
 
-.shift{
-    float: left;
+.shift {
+    float: right;
     width: 5%;
-    margin: 1% 90% 1% 0;
+    margin: 0 75% 0 0;
     color: #405365;
     font-size: 16px;
+}
+
+.inputTxt {
+    margin: 0;
+    width: 30%;
+    float: left;
+    color: black;
+}
+
+.move {
+    margin: 0 0 2% 0;
+    width: 4%;
+    color: black;
+}
+
+.submitButton {
+    color: #fff;
+    background-color: #BB4536;
+    width: 30%;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #BB4536;
+
+    text-align: center;
+    padding: 5px;
+
+}
+
+.outputTextContainer {
+    margin: 1% 0;
+    width: 30%;
+    height: 20%;
+    background-color: lightgrey;
+}
+
+.submitTextContainer {
+    margin: 3% 0 0 0;
+
+}
+
+.outputTextContainer h3 {
+    color: black
 }
 
 .bg-custom {
@@ -106,8 +139,8 @@ form {
 
 }
 
-@media only screen and (max-width: 830px){
-    .leftTextArea{
+@media only screen and (max-width: 830px) {
+    .leftTextArea {
         float: left;
         width: 100%;
         color: #405365;
@@ -115,7 +148,7 @@ form {
         margin: 1% 0;
     }
 
-    .rightTextArea{
+    .rightTextArea {
         float: left;
         width: 100%;
         color: #405365;
@@ -123,17 +156,17 @@ form {
         margin: 1% 0;
     }
 
-    .encryptDecryptButton{
-    color: #fff;
-    background-color: #BB4536;
-    width: 80%;
-    font-size: 3vw;
-    font-weight: bold;
-    border: 1px solid;
-    border-color: #BB4536;
-    margin: 1% 10%;
-    text-align: center;
-    padding: 5px;
+    .encryptDecryptButton {
+        color: #fff;
+        background-color: #BB4536;
+        width: 80%;
+        font-size: 3vw;
+        font-weight: bold;
+        border: 1px solid;
+        border-color: #BB4536;
+        margin: 1% 10%;
+        text-align: center;
+        padding: 5px;
 
-}
+    }
 }

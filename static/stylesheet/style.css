@@ -1,8 +1,132 @@
-body, head{
-    font-family: 'segoe ui'
+
+* {
+    font-family: segoe ui;
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
 }
-h1{
-    color:red;
+
+body {
+    height: 100%;
+    background-color: #3D5265;
 }
-h2{
-    color:green;
+
+.content {
+    width: 80%;
+    margin: 1% 10%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.featured_rightpart {
+    text-align: center;
+    overflow: hidden;
+}
+
+header {
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    background-color: #BC4333;
+    overflow: hidden;
+}
+
+.featured_rightpart {
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.featured_rightpart h2 {
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    /* need this to clear the default margin*/
+    margin-bottom: 0px;
+}
+
+form h2,h3 {
+  text-align: center;
+  padding: 5px;
+
+}
+
+form h3{
+    margin: 0 0 2.5em 0;
+}
+
+form {
+    color: #405365;
+    margin: 5% 5% 5% 5%;
+}
+
+.leftTextArea{
+    float: left;
+    width: 40%;
+
+    color: #405365;
+    font-size: 16px;
+}
+
+.rightTextArea{
+    float: right;
+    width: 40%;
+
+    color: #405365;
+    font-size: 16px;
+}
+
+.encryptDecryptButton{
+    color: #fff;
+    background-color: #BB4536;
+    width: 15%;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #BB4536;
+    margin: 0 2.5%;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.bg-custom {
+    background-color: #BB4536;
+    border-color: #BB4536;
+    border-radius: 0;
+
+}
+
+@media only screen and (max-width: 830px){
+    .leftTextArea{
+        float: left;
+        width: 100%;
+        color: #405365;
+        font-size: 16px;
+        margin: 1% 0;
+    }
+
+    .rightTextArea{
+        float: left;
+        width: 100%;
+        color: #405365;
+        font-size: 16px;
+        margin: 1% 0;
+    }
+
+    .encryptDecryptButton{
+    color: #fff;
+    background-color: #BB4536;
+    width: 80%;
+    font-size: 3vw;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #BB4536;
+    margin: 1% 10%;
+    text-align: center;
+    padding: 5px;
+
+}
+}

@@ -3,7 +3,7 @@
 {% block body %}
     <body>
     <div class="content">
-        <h1>Caesar Cipher!!!</h1>
+        <h1 style="text-align: center;">--Caesar Cipher--</h1>
 
         <form action="" class="caesarcipher" method="post">
             <select style="color:black;" name="options" method="GET" action="/">
@@ -21,10 +21,10 @@
                    value="{{ request.form.txt }}">
             <br>
             <div class =submitTextContainer>
-                <input type="submit" class="submitButton" name="submit" value="submit"></div>
+                <input type="submit" class="submitButton" name="submit" value="SUBMIT"></div>
             <br>
             <div class =outputTextContainer>
-                <h3>Output text: {{ output }}</h3>
+                <textarea style="resize: none; overflow:hidden;color: #405365; min-height:100%;min-width:37.5%;height:100%;width:100%;">Output text: {{ output }}</textarea>
             </div>
         </form>
 

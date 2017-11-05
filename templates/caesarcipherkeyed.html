@@ -1,0 +1,9 @@
+{% extends "header.html" %}
+
+{% block body %}
+    <div class="content">
+        <img class="oops" src="{{ url_for('static', filename='oopslogo.png') }}"/>
+        <h1 style="text-align: center; margin-top: 2%;">Looks like this page is still being worked on!</h1>
+    </div>
+    <script type="text/javascript">alert("The page is not ready yet!")</script>
+{% endblock %}

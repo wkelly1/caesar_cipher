@@ -81,6 +81,10 @@ def caesarcipher2():
     except:
         return render_template('caesarcipher2.html')
 
+@app.route("/caesarcipherkeyed/", methods=["POST", "GET"])
+def caesarcipherkeyed():
+    return render_template('caesarcipherkeyed.html')
+
 if __name__ == "__main__":
     app.run()
 

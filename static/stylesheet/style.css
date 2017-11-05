@@ -112,6 +112,14 @@ form {
     color: black;
 }
 
+.inputKey {
+    margin: 0;
+    width: 100%;
+    float: left;
+    color: black;
+}
+
+
 .move {
     margin: 1% 80% 2% 0;
     width: 10%;

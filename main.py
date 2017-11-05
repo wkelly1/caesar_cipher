@@ -121,12 +121,31 @@ def caesarcipherkeyed():
 
                 output = txtOut
             elif request.form['options'] == "decrypt":
-
                 txt = request.form['txt'].lower()
+                keyword = request.form['key'].lower()
                 shift = int(request.form['shift'])
                 txtOut = ""
-                alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
+
+                alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
+                            "s",
                             "t", "u", "v", "w", "x", "y", "z"]
+                keyword = ''.join(sorted(set(keyword), key=keyword.index))
+
+                for elmt in alphabet:
+                    for i in keyword:
+                        if elmt == i:
+                            alphabet.remove(i)
+
+                for elmt in alphabet:
+                    for i in keyword:
+                        if elmt == i:
+                            alphabet.remove(i)
+
+                for elmt in keyword[::-1]:
+                    alphabet.insert(0, elmt)
+
+                txtOut = ""
+
                 for i in txt:
                     if i != " ":
                         position = alphabet.index(i)

@@ -45,7 +45,7 @@ def caesarcipher():
 def caesarcipher2():
     try:
         if request.method == "POST":
-            print(request.form['options'])
+
             if request.form['options']=="encrypt":
                 txt = request.form['txt'].lower()
                 shift = int(request.form['shift'])
@@ -85,7 +85,6 @@ def caesarcipher2():
 def caesarcipherkeyed():
     try:
         if request.method == "POST":
-            print(request.form['options'])
             if request.form['options']=="encrypt":
                 txt = request.form['txt'].lower()
                 keyword = request.form['key'].lower()

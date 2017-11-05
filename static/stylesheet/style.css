@@ -14,12 +14,18 @@ body {
     background-color: #3D5265;
 }
 
+
 .content {
     width: 80%;
     margin: 1% 10%;
 
 }
 
+.content1 {
+    width: 100%;
+    margin: 1% 0;
+
+}
 .oops{
     width:5%;
     heigh:5%;
@@ -63,7 +69,7 @@ form {
 
 .leftTextArea {
     float: left;
-    width: 40%;
+    width: 30%;
     margin-top: 2%;
     color: #405365;
     font-size: 16px;
@@ -71,7 +77,7 @@ form {
 
 .rightTextArea {
     float: right;
-    width: 39%;
+    width: 30%;
     margin: 2% 0;
     color: #405365;
     font-size: 16px;
@@ -85,7 +91,7 @@ form {
     font-weight: bold;
     border: 1px solid;
     border-color: #BB4536;
-    margin: 0 2.5%;
+    margin: 2% 5% 0 5%;
     text-align: center;
     padding: 5px;
 
@@ -94,7 +100,7 @@ form {
 .shift {
     float: right;
     width: 5%;
-    margin: 0 75% 0 0;
+    margin: 0 70% 0 0;
     color: #405365;
     font-size: 16px;
 }
@@ -155,6 +161,10 @@ form {
 
 }
 
+.stuff{
+    width:100%;
+}
+
 @media only screen and (max-width: 830px) {
     .leftTextArea {
         float: left;
@@ -185,6 +195,10 @@ form {
         padding: 5px;
 
     }
+    .shift{
+        float:left;
+        margin: 0 3%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -206,17 +220,33 @@ form {
 @media only screen and (max-width: 450px) {
 
     .caesarcipher{
-        margin: 5% 0 2% 0;
+        margin: 5% 2% 2% 2%;
     }
+    .shift {
 
+    width: 6%;
+    margin: 0 60% 5% 0;
+
+}
     .submitButton {
 
     width: 100%;
-    font-size: 4vw;
+    font-size: 8vw;
     padding: 5px;
 
+    .encryptDecryptButton {
 
-}
+
+        width: 100%;
+        font-size: 5vw;
+
+
+
+        margin: 1% 0;
+
+        padding: 5px;
+
+    }
 
     .content {
     width: 94%;

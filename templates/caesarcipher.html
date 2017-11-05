@@ -2,15 +2,18 @@
 
 {% block body %}
 <body>
-<div class="content">
-    <h1>Caesar Cipher!!!</h1>
+<div class="content1">
+
 
     <form action ="" class="caesarcipher" method="post">
+        <h1 style="text-align: center;">--Caesar Cipher--</h1>
         <h3 style="float:left">Shift amount:</h3>
         <input type="number" class=shift name = "shift" value = "{{request.form.shift}}">
+        <div class="stuff">
         <input type="text" class=leftTextArea placeholder="Decrypted text" name = "unEncryptedTxt" value = "{{request.form.unEncryptedTxt}}">
         <input type="submit" class="encryptDecryptButton" name="submit" value="ENCRYPT / DECRYPT">
         <input type="text" class=rightTextArea placeholder="Encrypted text" name = "encryptedTxt" value = "{{request.form.encryptedTxt}}">
+            </div>
         <h3 style="margin-top: 10%;">encrypted text: {{ output1 }}</h3>
         <h3>decrypted text: {{ output2 }}</h3>
     </form>
